@@ -103,12 +103,12 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('𝐓𝐄𝐂𝐇𝐍𝐎 𝐌𝐈𝐍𝐃𝐙', url=f'http://t.me/TMMAINCHANNEL')
+            InlineKeyboardButton('👀 ᴛɪᴘs', 'tips')
         ],
         [
-            InlineKeyboardButton('ミ★ 𝘚𝘜𝘗𝘗𝘖𝘙𝘛 ★彡🔥', url=f'http://t.me/technomindzchat')
+            InlineKeyboardButton('⚠️ ᴊᴏɪɴ ʜᴇʀᴇ', url=f'http://t.me/VintageBotz')
         [    
-            InlineKeyboardButton('🔎Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ᴀɢᴀɪɴ', switch_inline_query_current_chat=query)
         ],
         ]
         ]
