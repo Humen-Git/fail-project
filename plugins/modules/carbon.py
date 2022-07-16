@@ -6,10 +6,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 aiohttpsession = ClientSession()
 
 
-C = "This Carbon is made by  <a href='https://t.me/tmmainchannel'>❤️‍🔥Techno Mindz❤️‍🔥</a> "
+C = "This Carbon is made by  <a href='https://t.me/VintageBotz'>❤️‍🔥 Vintage Botz ❤️‍🔥</a> "
 F = InlineKeyboardMarkup(
 [[
-     InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/tmmainchannel")
+     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/VBotzSupport")
 ]]
 )
 
