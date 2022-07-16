@@ -92,7 +92,7 @@ async def next_page(bot, query):
             ])
 
     btn.insert(0, [
-        InlineKeyboardButton("🍄 {sᴇᴀʀᴄʜ} 🍄", url=url)#Vintage Botz
+        InlineKeyboardButton(f'♨️ {search} ♨️ ', 'url')#Vintage Botz
     ])
 
     if 0 < offset <= 10:
