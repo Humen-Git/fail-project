@@ -105,12 +105,12 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/technomindzchat')
+            InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/VBotzSupport')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.\n\n@TmMainChannel</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.\n\n@VintageBotz</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
@@ -238,7 +238,7 @@ async def unban_a_user(bot, message):
             return await message.reply(f"{k.mention} is not yet banned.")
         await db.remove_ban(k.id)
         temp.BANNED_USERS.remove(k.id)
-        await message.reply(f"Successfully unbanned {k.mention}\n\nMade My @TmMainChannel")
+        await message.reply(f"Successfully unbanned {k.mention}\n\nMade My @VintageBotz")
 
 
     
