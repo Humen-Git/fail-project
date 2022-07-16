@@ -1142,12 +1142,12 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
 
     btn.insert(0,
             [
-                InlineKeyboardButton("🎭 ᴍᴏᴠɪᴇs ᴄᴏʟʟᴇᴄᴛɪᴏɴ", url="https://t.me/CinemaVeedMovies"),
-                InlineKeyboardButton("💬 ᴍᴏᴠɪᴇ ʀᴇǫ", url="https://t.me/cinemaveed")
+                InlineKeyboardButton('🙅🏻‍♂️ ɴᴏᴛ ᴛʜɪs !!!', 'moviesheading'),
+                InlineKeyboardButton('⚠️ ᴍᴏʀᴇ ғɪʟᴇs', 'filenos')
             ])
 
     btn.insert(0, [
-        InlineKeyboardButton("📥 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 📥", url="https://t.me/tmmainchannel/29")
+        InlineKeyboardButton("👀 ᴛɪᴘs", 'tips')
     ])
 
     if offset != "":
