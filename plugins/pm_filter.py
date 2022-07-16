@@ -66,7 +66,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🎭 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f" [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 )
             ] 
             for file in files
@@ -75,7 +75,7 @@ async def next_page(bot, query):
         btn = [        
             [
                 InlineKeyboardButton(
-                    text=f"🎭 {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f" {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 ),
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}]",
@@ -92,7 +92,7 @@ async def next_page(bot, query):
             ])
 
     btn.insert(0, [
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')#Vintage Botz
+        InlineKeyboardButton('👀 ʀᴇᴀᴅ', 'tips')#Vintage Botz
     ])
 
     if 0 < offset <= 10:
@@ -1078,13 +1078,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "close":
         await query.message.delete()
     elif query.data == 'tips':
-        await query.answer("=> 𝖲𝖾𝗇𝖽 𝖼𝗈𝗋𝗋𝖾𝖼𝗍 𝖬𝗈𝗏𝗂𝖾/𝗌𝖾𝗋𝗂𝖾𝗌 𝖭𝖺𝗆𝖾\n=>𝖳𝗈 𝖦𝖾𝗍 𝖡𝖾𝗍𝗍𝖾𝗋 𝗋𝖾𝗌𝗎𝗅𝗍 𝖥𝗈𝗋 movies include year and language along with movie name \n\n=>Made By Techno Mindz", True)
+        await query.answer("=> 𝖲𝖾𝗇𝖽 𝖼𝗈𝗋𝗋𝖾𝖼𝗍 𝖬𝗈𝗏𝗂𝖾/𝗌𝖾𝗋𝗂𝖾𝗌 𝖭𝖺𝗆𝖾\n=>𝖳𝗈 𝖦𝖾𝗍 𝖡𝖾𝗍𝗍𝖾𝗋 𝗋𝖾𝗌𝗎𝗅𝗍 𝖥𝗈𝗋 movies include year and language along with movie name ", True)
     elif query.data == 'moviesheading':
         await query.answer("=>This is your search results, if is there any changes in result kindly follow the tips ☺️ ", True)
     elif query.data == 'filenos':
         await query.answer("=>I have only this much files 😰 \n To get more results do request as per tips 👉🏻 ", True)
     elif query.data == 'inform':
-        await query.answer("⚠︎ Information ⚠︎\n\nAfter 5 minutes this message will be automatically deleted\n\nIf you do not see the requested movie / series file, look at the next page\n\nⒸ @TmMainChannel", True)
+        await query.answer("⚠︎ Information ⚠︎\n\nAfter 5 minutes this message will be automatically deleted\n\nIf you do not see the requested movie / series file, look at the next page", True)
     try: await query.answer('⏳Loading...') 
     except: pass
 
