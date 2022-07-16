@@ -66,7 +66,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🏷️ [{get_size(file.file_size)}] 📂 {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f"🎭 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 )
             ] 
             for file in files
@@ -75,10 +75,10 @@ async def next_page(bot, query):
         btn = [        
             [
                 InlineKeyboardButton(
-                    text=f"📂 {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f"🎭 {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"🏷️ [{get_size(file.file_size)}]",
+                    text=f"[{get_size(file.file_size)}]",
                     callback_data=f'{pre}_#{file.file_id}#{query.from_user.id}',
                 )
             ] 
@@ -92,7 +92,7 @@ async def next_page(bot, query):
             ])
 
     btn.insert(0, [
-        InlineKeyboardButton(f'♨️ {search} ♨️ ', 'url')#Vintage Botz
+        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')#Vintage Botz
     ])
 
     if 0 < offset <= 10:
@@ -504,9 +504,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             'CAACAgIAAxkBAALfhWKhyQAB6dM3e7xjAzNaNkDcJvRusAAChxUAAj0PUEnem2b91sejvx4E',
             reply_markup=InlineKeyboardMarkup(
                 [[
-                    InlineKeyboardButton('📢 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/CinemaVeedMovies')
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🤖 ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs', url='https://t.me/vintagebotz'),
+                    InlineKeyboardButton('🍿 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/CinemaVeedMovies'),
                     InlineKeyboardButton('👥 ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ', url='https://t.me/Cinemaveed')
                 ],[
                     InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='')
