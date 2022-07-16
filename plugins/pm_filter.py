@@ -1079,11 +1079,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "close":
         await query.message.delete()
     elif query.data == 'tips':
-        await query.answer("=> 𝖲𝖾𝗇𝖽 𝖼𝗈𝗋𝗋𝖾𝖼𝗍 𝖬𝗈𝗏𝗂𝖾/𝗌𝖾𝗋𝗂𝖾𝗌 𝖭𝖺𝗆𝖾\n=>𝖳𝗈 𝖦𝖾𝗍 𝖡𝖾𝗍𝗍𝖾𝗋 𝗋𝖾𝗌𝗎𝗅𝗍 𝖥𝗈𝗋 movies include year and language along with movie name ", True)
+        await query.answer("sᴇɴᴅ ᴄᴏʀʀᴇᴄᴛ ᴍᴏᴠɪᴇ/sᴇʀɪᴇs ɴᴀᴍᴇ ғᴏʀ ʙᴇᴛᴛᴇʀ ʀᴇsᴜʟᴛs .\nᴛᴏ ɢᴇᴛ ʙᴇᴛᴛᴇʀ ʀᴇsᴜʟᴛ ғᴏʀ sᴇʀɪᴇs sᴇᴀʀᴄʜ ʟɪᴋᴇ ᴇxᴀᴍᴘʟᴇ ɢɪᴠᴇɴ, Eg - Peaky Blinders S01E01\n\n ©Mᴇ!!!😁", True)
     elif query.data == 'moviesheading':
-        await query.answer("=>This is your search results, if is there any changes in result kindly follow the tips ☺️ ", True)
+        await query.answer("=>ᴛʜɪs ɪs ʏᴏᴜʀ sᴇᴀʀᴄʜ ʀᴇsᴜʟᴛs, ɪғ ɪs ᴛʜᴇʀᴇ ᴀɴʏ ᴄʜᴀɴɢᴇs ɪɴ ʀɪsᴜʟᴛs ᴋɪɴᴅʟʏ ғᴏʟʟᴏᴡ ᴛʜᴇ ᴛɪᴘs ☺️ ", True)
     elif query.data == 'filenos':
-        await query.answer("=>I have only this much files 😰 \n To get more results do request as per tips 👉🏻 ", True)
+        await query.answer("ɪ ʜᴀᴠᴇ ᴏɴʟʏ ᴛʜɪs ᴍᴜᴄʜ ғɪʟᴇs😰 \n ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ʀᴇsᴜʟᴛs/ғɪʟᴇs ᴅᴏ ʀᴇǫᴜᴇsᴛ ᴀs ᴘᴇʀ ᴛɪᴘs 👉🏻 ", True)
     elif query.data == 'inform':
         await query.answer("⚠︎ Information ⚠︎\n\nAfter 5 minutes this message will be automatically deleted\n\nIf you do not see the requested movie / series file, look at the next page", True)
     try: await query.answer('⏳Loading...') 
