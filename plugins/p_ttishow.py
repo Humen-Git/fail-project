@@ -22,7 +22,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/technomindzchat')
+                InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/VBotzSupport')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -37,11 +37,11 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/technomindzchat')
+            InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/VBotzSupport')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.\n\n@TechnoMindzChat</b>",
+            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.\n\n@VBotzSupport</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -52,7 +52,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title} \n\n🔘 No Promo, No Porn, No Other Abuses \n🔘 Ask Your Movies With Correct Spelling \n🔘 Spammers Stay Away \n🔘 Feel Free To Report Any Errors To Admins using @admin \n❤️‍🔥 Share & Support Us  ❤️‍🩹</b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -66,12 +66,12 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/technomindzchat')
+            InlineKeyboardButton('🎎 sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/VBotzSupport')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.\n\n@TechnoMindzChat</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.\n\n@VBotzsupport</b>',
             reply_markup=reply_markup,
         )
 
