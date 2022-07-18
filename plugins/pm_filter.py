@@ -1119,7 +1119,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                        text=f"📂[{get_size(file.file_size)}]{file.file_name}", 
+                        text=f"📂{get_size(file.file_size)} ➜ {file.file_name}", 
                         callback_data=f'{pre}#{file.file_id}#{msg.from_user.id if msg.from_user is not None else 0}'
                 )
             ] 
@@ -1220,7 +1220,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
     await client.send_video(
                 chat_id=message.chat.id,
                 video="https://telegra.ph/file/0cddf1c687a0dbc256313.mp4",
-                caption=f"📢 Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code>\nBʏ <spoiler>{message.from_user.mention}</spoiler>\nIs Now Cʟᴏꜱᴇᴅ 😀",
+                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code>\nBʏ <spoiler>{message.from_user.mention}</spoiler>\nIs Now Cʟᴏꜱᴇᴅ 🗑️",
                 reply_to_message_id=message.message_id
             )
     await msg.delete()
