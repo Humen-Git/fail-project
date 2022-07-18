@@ -66,7 +66,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f" [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f" {get_size(file.file_size)} ➜ {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 )
             ] 
             for file in files
@@ -140,7 +140,7 @@ async def advantage_spoll_choker(bot, query):
     if not movies:
         return await query.answer("You Are Using My Old Messages🥲,Try Asking Again 🤠 ", show_alert=True)#Techno Mindz
     movie = movies[(int(movie_))]
-    await query.answer('just a second...searching....🧐 ')#TechnoMindz
+    await query.answer('just a second...searching....🧐 ')#vintagebotz
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
