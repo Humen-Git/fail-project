@@ -48,7 +48,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You Are Using My Old Messages🥲,Try Asking Again 🤠", show_alert=True)#Techno Mindz
+        await query.answer("You Are Using My Old Messages🥲,Try Asking Again 🤠", show_alert=True)#nishn_ea
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -88,7 +88,7 @@ async def next_page(bot, query):
     btn.insert(0,
             [
                 InlineKeyboardButton('🙅🏻‍♂️ ɴᴏᴛ ᴛʜɪs !!!', 'moviesheading'),
-                InlineKeyboardButton('⚠️ ᴍᴏʀᴇ ғɪʟᴇs', 'filenos')
+                InlineKeyboardButton('⚠️ ɪɴғᴏ', 'inform')
             ])
 
     btn.insert(0, [
@@ -191,7 +191,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if (st.status == "creator") or (str(userid) in ADMINS):
             await del_all(query.message, grp_id, title)
         else:
-            await query.answer("You need to be Group Owner or an Auth User to do that! 😠 \n\n@TmMainChannel", show_alert=True)
+            await query.answer("You need to be Group Owner or an Auth User to do that! 😠 ", show_alert=True)
     elif query.data == "delallcancel":
         userid = query.from_user.id
         chat_type = query.message.chat.type
