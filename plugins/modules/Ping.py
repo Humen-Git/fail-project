@@ -8,8 +8,8 @@ from plugins.helper_functions.cust_p_filters import f_onw_fliter
 
 
 # -- Constants -- #
-ALIVE = "Glad to hear that and really nice to know that I am not talking to a ghost."
-HELP = "CAACAgUAAxkBAAEBTsthlWY_Pte1RC4yhz3nD1utGagSSwAC0gIAAsaPcVUSPJS_m8rS5h4E"
+ALIVE = "വെറുതെ Alive അടിച്ചു വെറുപ്പിക്കാതട ഞൻ ഇവട ജീവനോടെ ഒക്കെ തന്നെ ണ്ട് MANH ചത്തൊന്നും പോയിട്ടില്ല"
+HELP = "ദൈവമേ എന്നെ മാത്രം രക്ഷിക്കണേ...."
 REPO = "നമ്മൾ നമ്മൾ പോലുമറിയാതെ അധോലോകം ആയി മാറിക്കഴിഞ്ഞിരിക്കുന്നു ഷാജിയേട്ടാ..."
 # -- Constants End -- #
 
