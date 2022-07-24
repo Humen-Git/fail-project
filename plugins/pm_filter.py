@@ -502,7 +502,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         await query.message.delete()
         await query.message.reply_sticker(
-            'CAACAgIAAxkBAALfhWKhyQAB6dM3e7xjAzNaNkDcJvRusAAChxUAAj0PUEnem2b91sejvx4E',
+            'CAACAgUAAxkBAAEFXS1i3OC8sigm3s_Ee9Cm9PSBhRJqoQACqgMAApDYoFXPMqVGLndwBikE',
             reply_markup=InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -525,7 +525,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         await query.message.delete()
         await query.message.reply_sticker(
-            'CAACAgIAAxkBAALfAAFioLs6ludC4125M0m5V9LqfQY6jQAC_RkAAmzaUUlkoYIx4TqiCh4E',
+            'CAACAgUAAxkBAAEFXS9i3ODmZK90coxy0jx6cxK2gKtMZQACFwUAAtBfSFTZ760AAQ7WkC0pBA',
             reply_markup=InlineKeyboardMarkup(
                 [[
             InlineKeyboardButton('⚡ ғᴇᴀᴛᴜᴇs', callback_data='featuresS'),
@@ -542,7 +542,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         await query.message.delete()
         await query.message.reply_sticker(
-            'CAACAgIAAxkBAALfA2Kgu14WszCBeoISI35WcCyUAesiAALDEwACbegQSoZjwH3h3Lo0HgQ',
+            'CAACAgUAAxkBAAEFXTVi3OEef-bewbgyPdus0AEHfXj5cAAC4wQAAopCUVS1AAEKd5rdk-EpBA',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -560,7 +560,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about_menu1":
         await query.message.delete()
         await query.message.reply_sticker(
-            'CAACAgIAAxkBAALfCGKgu_iyutqTf1v25x4ZW9QfoxrLAAKgFwAC37QgSSCArCK7IMbJHgQ',
+            'CAACAgUAAxkBAAEFXTFi3OD-viDtx3mxaUCiWMtotxQmvAACIAgAAtQDUFT7ZNQCB9FjwikE',
             reply_markup=InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton('👑 ᴅᴇᴠ 👑', callback_data='dev_dk'),
@@ -583,7 +583,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "dev_dk":
         await query.message.delete()
         await query.message.reply_sticker(
-            'CAACAgUAAxkBAAECxfZi0Uo9LuYbjXKMjL79D4ELDiRSMQACRgcAAgOq-FUW8GgrFGUTyx4E',
+            'CAACAgUAAxkBAAEFXTdi3OEx0Cau5BPmD0m-u_k4gnpLYgACkAMAAhvcUFRaxtCedV4wXCkE',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -600,7 +600,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "dev_all1":
         await query.message.delete()
         await query.message.reply_sticker(
-            'CAACAgUAAxkBAAEBH0hinPbKkK2Q1dNeMLOBxzDTaxk7XAAC5AIAAgX8WFYr5CVXDF0kuCQE',
+            'CAACAgUAAxkBAAEFXTli3OFqOihngazjIB5djmT5vcPvHQACMwQAAnPQUVQbaVhVNaSOBikE',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -623,7 +623,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "jns_maintains":
         await query.message.delete()
         await query.message.reply_sticker(
-            'CAACAgIAAxkBAALdzGKbdOHcsMpnikpRm99pIAH_U0tYAALoFgAC_YsQStr2Fln0t1FAHgQ',
+            'CAACAgUAAxkBAAEFXTti3OGkebbN_KWXpdT3VcR6vYWT_wACwQUAAnaqUVT_3KON_tMqgykE',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
