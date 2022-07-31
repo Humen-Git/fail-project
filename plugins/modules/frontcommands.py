@@ -1,5 +1,5 @@
 import os
-from nksama.utils.fonts import Fonts
+from plugis.offline_tg.fonts import Fonts
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message 
 from nksama import bot
