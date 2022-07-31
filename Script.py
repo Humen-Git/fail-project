@@ -279,8 +279,10 @@ Google's TTS engine by way of the gTTS library
 
 𝖣𝗈 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍 𝖳𝗈 𝖪𝗇𝗈𝗐 𝖠 𝖲𝗈𝗇𝗀 𝖭𝖺𝗆𝖾 𝖲𝗈 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖧𝖾𝖺𝗋 𝖨𝗍....❤️‍🔥
 """
-    FONT_TXT = """<b>𝖲𝗍𝗒𝗅𝗂𝗌𝗁 𝖥𝗈𝗇𝗍𝗌</b>
-𝖶𝖺𝗇𝗍 𝖲𝗈𝗆𝖾 𝖲𝗍𝗒𝗅𝗂𝗌𝗁 𝖿𝗈𝗇𝗍𝗌 𝗌𝖾𝗇𝖽 /font
+    YTTHUMB_TXT = """<b>𝖸𝗈𝗎𝖳𝗎𝖻𝖾 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅</b>
+𝖳𝗒𝗉𝖾 /ytthumb 𝖠𝗇𝖽 𝖵𝗂𝖽𝖾𝗈 𝖫𝗂𝗇𝗄
+
+• 𝖤𝗑𝖺𝗆𝗉𝗅𝖾 :- `/ytthumb https://youtu.be/PZocxELOVgI`
 """   
     EXTRAMOD_TXT = """<b>Extra Modules</b>
 
