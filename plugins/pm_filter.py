@@ -926,7 +926,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton(' sʜᴀᴢᴀᴍ',callback_data='shazam')
-                        InlineKeyboardButton(' ғᴏɴᴛs',callback_data='frontcommands')
+                        InlineKeyboardButton(' ʏᴛ ᴛʜᴜᴍʙ',callback_data='yt_thumb_dl')
                     ],
                     [
                         InlineKeyboardButton('⏮️ ʙᴀᴄᴋ', callback_data='help'),
@@ -1059,7 +1059,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
         await query.answer("ʟᴏᴀᴅɪɴɢ........")
-    elif query.data == "frontcommands":
+    elif query.data == "yt_thumb_dl":
 
         buttons = [[
 
@@ -1087,7 +1087,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         await query.message.reply(
 
-            text=script.FONT_TXT,
+            text=script.YTTHUMB_TXT,
 
             reply_markup=reply_markup,
 
