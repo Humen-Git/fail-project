@@ -917,16 +917,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('🎞 ɪᴍᴅʙ', callback_data='imbd'),
-                        InlineKeyboardButton('ɪɴғᴏ 😀', callback_data='info')
+                        InlineKeyboardButton(' ɪᴍᴅʙ', callback_data='imbd'),
+                        InlineKeyboardButton('ɪɴғᴏ ', callback_data='info')
                     ],
                     [
-                        InlineKeyboardButton('🗃 ᴄᴀʀʙᴏɴ', callback_data='carbon'),
-                        InlineKeyboardButton('Uʀʟ sʜᴏʀᴛ 🔗', callback_data='urlshrt')
+                        InlineKeyboardButton(' ᴄᴀʀʙᴏɴ', callback_data='carbon'),
+                        InlineKeyboardButton('Uʀʟ sʜᴏʀᴛ ', callback_data='urlshrt')
                     ],
                     [
-                        InlineKeyboardButton('🎶 sʜᴀᴢᴀᴍ',callback_data='shazam')
-                        InlineKeyboardButton('🆑 ғᴏɴᴛs',callback_data='frontcommands')
+                        InlineKeyboardButton(' sʜᴀᴢᴀᴍ',callback_data='shazam')
+                        InlineKeyboardButton(' ғᴏɴᴛs',callback_data='frontcommands')
                     ],
                     [
                         InlineKeyboardButton('⏮️ ʙᴀᴄᴋ', callback_data='help'),
@@ -1020,6 +1020,84 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True
         )
         await query.answer("ᴛᴏᴏʟs ᴏᴘᴇɴɪɴɢ........")
+    elif query.data == "shazam":
+
+        buttons = [[
+
+            InlineKeyboardButton('⏮️ ʙᴀᴄᴋ', callback_data='toolsjns')
+
+        ]]
+
+        r=await query.message.reply_text('▣▣▢▢▢▢')
+
+        a=await r.edit('▣▣▣▢▢▢')
+
+        v=await a.edit('▣▣▣▣▢▢')
+
+        i=await v.edit('▣▣▣▣▣▢')
+
+        n=await i.edit('▣▣▣▣▣▣')
+
+        await asyncio.sleep(1)
+
+        await n.delete()
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await query.message.delete()
+
+        await query.message.reply(
+
+            text=script.SHAZM_TXT,
+
+            reply_markup=reply_markup,
+
+            parse_mode='html',
+
+            disable_web_page_preview=True
+
+        )
+
+        await query.answer("ʟᴏᴀᴅɪɴɢ........")
+    elif query.data == "frontcommands":
+
+        buttons = [[
+
+            InlineKeyboardButton('⏮️ ʙᴀᴄᴋ', callback_data='toolsjns')
+
+        ]]
+
+        r=await query.message.reply_text('▣▣▢▢▢▢')
+
+        a=await r.edit('▣▣▣▢▢▢')
+
+        v=await a.edit('▣▣▣▣▢▢')
+
+        i=await v.edit('▣▣▣▣▣▢')
+
+        n=await i.edit('▣▣▣▣▣▣')
+
+        await asyncio.sleep(1)
+
+        await n.delete()
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await query.message.delete()
+
+        await query.message.reply(
+
+            text=script.FONT_TXT,
+
+            reply_markup=reply_markup,
+
+            parse_mode='html',
+
+            disable_web_page_preview=True
+
+        )
+
+        await query.answer("Oᴘᴇɴɪɴɢ........")
 
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
