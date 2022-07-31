@@ -2,7 +2,7 @@ import os
 from plugins.offline_tg.fonts import Fonts
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message 
-from nksama import bot
+from pyrogram import bot
 
 @bot.on_message(filters.command("font"))
 async def style_buttons(c, m: Message, cb=False):
